@@ -374,6 +374,8 @@ type Message struct {
 	//
 	// optional
 	User *User `json:"user,omitempty"`
+
+	MessageThreadID int `json:"message_thread_id,omitempty"`
 	// SenderChat is the sender of the message, sent on behalf of a chat. The
 	// channel itself for channel messages. The supergroup itself for messages
 	// from anonymous group administrators. The linked channel for messages
